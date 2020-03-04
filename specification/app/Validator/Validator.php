@@ -2,10 +2,11 @@
 
 namespace App\Validator;
 
-
 class Validator
 {
     protected $rules = [];
+
+    protected $input;
 
     public function __call($method, $arguments)
     {
@@ -16,8 +17,15 @@ class Validator
         return $this;
     }
 
+    public function withInput($input)
+    {
+        $this->input = $input;
+        return $this;
+    }
+
     protected function getRule($rule)
     {
-        return new $rule;
+        $path = "App\Validator\Rules\\" . $rule;
+        return new $path;
     }
 }
