@@ -4,6 +4,6 @@ require 'vendor/autoload.php';
 
 $validator = new \App\Validator\Validator;
 
-$validator->isString()->isGreaterThen(10);
+$validator->withInput('test')->isString()->isGreaterThen(3);
 
-var_dump($validator->rules);
+var_dump($validator->isValid());

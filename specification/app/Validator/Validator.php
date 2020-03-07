@@ -23,6 +23,17 @@ class Validator
         return $this;
     }
 
+    public function isValid()
+    {
+        foreach ($this->rules as $rule) {
+            if (!$rule['object']->isSatisfiedBy($this->input, $rule['argument'])) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     protected function getRule($rule)
     {
         $path = "App\Validator\Rules\\" . $rule;
