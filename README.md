@@ -8,9 +8,11 @@ design problem in your code.
 
 - [x] Strategy Pattern
 - [x] Specification Pattern
-- [ ] Decorator Pattern
+- [x] Decorator Pattern
 - [ ] Observer Pattern
 - [ ] Adapter Pattern
+- [ ] Singleton Pattern
+- [ ] Factory Pattern
 
 
 How to use:
