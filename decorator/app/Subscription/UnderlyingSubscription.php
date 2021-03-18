@@ -14,6 +14,6 @@ class UnderlyingSubscription implements Subscription
 
     public function description(): string
     {
-        return 'Basic Subscription description';
+        return 'Basic Subscription';
     }
 }

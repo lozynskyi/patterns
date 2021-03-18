@@ -1,10 +1,10 @@
 <?php
 
-use App\Subscription\AdditionalSpaceFeature;
-use App\Subscription\UnderlyingSubscription;
+use App\Subscription\{AdditionalSpaceFeature, UnderlyingSubscription, SupportFeature};
 
 require 'vendor/autoload.php';
 
-$sub = new AdditionalSpaceFeature(new UnderlyingSubscription());
+$sub = new SupportFeature(new AdditionalSpaceFeature(new UnderlyingSubscription()));
 
-var_dump($sub->description());
+var_dump('Price: ' . $sub->price());
+var_dump('Description: ' . $sub->description());
