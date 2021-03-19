@@ -1,0 +1,17 @@
+{
+  "name": "lozynskyi/patterns",
+  "description": "Observer pattern.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "pol",
+      "email": "slayter007@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
