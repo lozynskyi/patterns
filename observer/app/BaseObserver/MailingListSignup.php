@@ -7,19 +7,28 @@ use App\BaseObserver\Contracts\Subject;
 
 class MailingListSignup implements Subject
 {
+    /** @var Observer[] */
+    protected $observers = [];
 
     public function attach(Observer $observer)
     {
-        // TODO: Implement attach() method.
+        $this->observers[] = $observer;
     }
 
     public function detach(Observer $observer)
     {
-        // TODO: Implement detach() method.
+        for ($i = 0; $i < count($this->observers); $i++) {
+            if ($this->observers[$i] === $observer) {
+                unset($this->observers[$i]);
+            }
+        }
+        $this->observers = array_values($this->observers);
     }
 
     public function notify()
     {
-        // TODO: Implement notify() method.
+        foreach ($this->observers as $observer) {
+            $observer->handle();
+        }
     }
 }
