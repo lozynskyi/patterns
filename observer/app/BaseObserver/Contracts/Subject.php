@@ -4,7 +4,7 @@ namespace App\BaseObserver\Contracts;
 
 interface Subject
 {
-    public function attach($observer);
-    public function detach($observer);
+    public function attach(Observer $observer);
+    public function detach(Observer $observer);
     public function notify();
 }
