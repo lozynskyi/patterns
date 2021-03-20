@@ -9,7 +9,7 @@ design problem in your code.
 - [x] Strategy Pattern
 - [x] Specification Pattern
 - [x] Decorator Pattern
-- [ ] Observer Pattern
+- [x] Observer Pattern
 - [ ] Adapter Pattern
 - [ ] Singleton Pattern
 - [ ] Factory Pattern
