@@ -5,7 +5,7 @@ namespace App\BaseObserver;
 use App\BaseObserver\Contracts\Subject;
 use App\BaseObserver\Traits\Subjectable;
 
-class MailingListSignup implements Subject
+class Login implements Subject
 {
     use Subjectable;
 

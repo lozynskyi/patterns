@@ -12,6 +12,8 @@ trait Subjectable
     public function attach(Observer $observer)
     {
         $this->observers[] = $observer;
+
+        return $this;
     }
 
     public function detach(Observer $observer)
