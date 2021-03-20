@@ -1,16 +1,14 @@
 <?php
 
-
 namespace App\BaseObserver;
-
 
 use App\BaseObserver\Contracts\Observer;
 
 class SubscribeUserToService implements Observer
 {
 
-    public function handle()
+    public function handle($event)
     {
-        // TODO: Implement handle() method.
+        var_dump('Subscribe user to Service: ' . $event->user->email);
     }
 }

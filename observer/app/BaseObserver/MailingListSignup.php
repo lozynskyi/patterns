@@ -7,8 +7,15 @@ use App\BaseObserver\Contracts\Subject;
 
 class MailingListSignup implements Subject
 {
+    public $user;
+
     /** @var Observer[] */
     protected $observers = [];
+
+    public function __construct($user)
+    {
+        $this->user = $user;
+    }
 
     public function attach(Observer $observer)
     {
@@ -28,7 +35,7 @@ class MailingListSignup implements Subject
     public function notify()
     {
         foreach ($this->observers as $observer) {
-            $observer->handle();
+            $observer->handle($this);
         }
     }
 }

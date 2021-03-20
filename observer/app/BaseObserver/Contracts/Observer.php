@@ -4,5 +4,5 @@ namespace App\BaseObserver\Contracts;
 
 interface Observer
 {
-    public function handle();
+    public function handle(Subject $event);
 }
