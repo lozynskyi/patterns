@@ -4,7 +4,7 @@ namespace App\SplObserver;
 
 use SplObserver;
 
-abstract class Event implements \SplSubject
+abstract class BaseEvent implements \SplSubject
 {
     protected $storage;
 
@@ -42,7 +42,7 @@ abstract class Event implements \SplSubject
         }
         /** @var SplObserver $observer */
         foreach ($this->storage as $observer) {
-            $observer->update();
+            $observer->update($this);
         }
     }
 }

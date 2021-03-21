@@ -4,7 +4,7 @@ namespace App\SplObserver;
 
 use SplObserver;
 
-class MailingListSignup extends Event
+class MailingListSignupEvent extends BaseEvent
 {
 
 }

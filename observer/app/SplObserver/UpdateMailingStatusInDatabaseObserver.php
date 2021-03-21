@@ -4,7 +4,7 @@ namespace App\SplObserver;
 
 use SplSubject;
 
-class UpdateMailingStatusInDatabase implements \SplObserver
+class UpdateMailingStatusInDatabaseObserver implements \SplObserver
 {
 
     /**
@@ -12,6 +12,6 @@ class UpdateMailingStatusInDatabase implements \SplObserver
      */
     public function update(SplSubject $subject)
     {
-        // TODO: Implement update() method.
+        var_dump('Update user in DB');
     }
 }
