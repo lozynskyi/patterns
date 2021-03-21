@@ -6,7 +6,7 @@ use App\Subscription\Contracts\Subscription;
 
 abstract class SubscriptionFeature implements Subscription
 {
-    protected Subscription $subscription;
+    protected  $subscription;
 
     public function __construct(Subscription $subscription)
     {
