@@ -12,6 +12,6 @@ class SubscribeUserToServiceObserver implements \SplObserver
      */
     public function update(SplSubject $subject)
     {
-        var_dump('Subscribe user to Mail service.');
+        var_dump('Subscribe user to Mail service: ' . $subject->user->email);
     }
 }

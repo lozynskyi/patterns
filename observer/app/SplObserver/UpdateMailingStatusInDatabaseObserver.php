@@ -12,6 +12,6 @@ class UpdateMailingStatusInDatabaseObserver implements \SplObserver
      */
     public function update(SplSubject $subject)
     {
-        var_dump('Update user in DB');
+        var_dump('Update user in DB: ' . $subject->user->id);
     }
 }
