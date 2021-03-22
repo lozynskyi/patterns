@@ -10,7 +10,7 @@ design problem in your code.
 - [x] Specification Pattern
 - [x] Decorator Pattern
 - [x] Observer Pattern
-- [ ] Adapter Pattern
+- [x] Adapter Pattern
 - [ ] Singleton Pattern
 - [ ] Factory Pattern
 
