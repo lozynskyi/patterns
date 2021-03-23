@@ -11,7 +11,7 @@ design problem in your code.
 - [x] Decorator Pattern
 - [x] Observer Pattern
 - [x] Adapter Pattern
-- [ ] Singleton Pattern
+- [x] Singleton Pattern
 - [ ] Factory Pattern
 
 
