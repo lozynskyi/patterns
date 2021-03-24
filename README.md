@@ -12,7 +12,7 @@ design problem in your code.
 - [x] Observer Pattern
 - [x] Adapter Pattern
 - [x] Singleton Pattern
-- [ ] Factory Pattern
+- [x] Factory Pattern
 
 
 How to use:
