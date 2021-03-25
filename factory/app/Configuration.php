@@ -19,7 +19,7 @@ class Configuration
         ]
     ];
 
-    public function get($keys): array
+    public function get($keys)
     {
         $data = $this->data;
         $keys = explode('.', $keys);
