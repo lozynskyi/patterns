@@ -1,7 +1,7 @@
 <?php
 
-use App\Config;
+use App\Configuration;
 
 require 'vendor/autoload.php';
 
-$config = new Config();
+$config = new Configuration();
