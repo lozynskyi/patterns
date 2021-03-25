@@ -11,9 +11,9 @@ class UploaderFactory
         $this->adapter = $adapter;
     }
 
-    public function make()
+    public function make(Configuration $config)
     {
-        return new Uploader();
+        return new Uploader($this->adapter->make($config));
     }
 
 }

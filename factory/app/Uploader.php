@@ -14,6 +14,6 @@ class Uploader
     }
     public function upload($file, $destination)
     {
-        return 'Uploaded';
+        return $this->adapter;
     }
 }
