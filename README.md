@@ -18,7 +18,7 @@ design problem in your code.
 How to use:
 
 1. `git clone git@github.com:lozynskyi/patterns.git && cd $(basename $_ .git)`
-2. for each pattern, example: `cd strategy`
+2. for each pattern (composer required), example: `cd strategy`
 
     2a `composer dump-autoload -o`
     
