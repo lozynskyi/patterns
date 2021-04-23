@@ -1,8 +1,8 @@
 {
   "name": "lozynskyi/patterns",
-  "description": "Factory pattern.",
+  "description": "Check the quality of the code on the PSR standard.",
   "minimum-stability": "stable",
-  "license": "MIT",
+  "license": "Apache-2.0 License",
   "authors": [
     {
       "name": "pol",
@@ -10,6 +10,8 @@
     }
   ],
   "require": {
+    "brainmaestro/composer-git-hooks": "^2.8",
+    "squizlabs/php_codesniffer": "^3.6"
   },
   "autoload": {
     "psr-4": {
