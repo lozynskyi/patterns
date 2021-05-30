@@ -13,7 +13,7 @@ design problem in your code.
 - [x] Adapter Pattern
 - [x] Singleton Pattern
 - [x] Factory Pattern
-- [] Event Dispatcher Pattern
+- [ ] Event Dispatcher Pattern
 
 
 
