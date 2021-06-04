@@ -2,8 +2,6 @@
 
 namespace App;
 
-use Transaction;
-
 abstract class AbstractHandler
 {
     /**
@@ -12,7 +10,7 @@ abstract class AbstractHandler
     protected AbstractHandler $handler;
 
     /**
-     * @param PspTransaction $transaction
+     * @param Transaction $transaction
      * @return mixed
      */
     abstract public function process(Transaction $transaction);

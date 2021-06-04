@@ -2,8 +2,6 @@
 
 namespace App;
 
-use Transaction;
-
 class LegalHandler extends AbstractHandler
 {
 
@@ -16,7 +14,7 @@ class LegalHandler extends AbstractHandler
             echo 'Legal -- scipped!\n';
         }
          echo 'Legal -- processed!\n';
-        
+
         $this->next($transaction);
     }
 }

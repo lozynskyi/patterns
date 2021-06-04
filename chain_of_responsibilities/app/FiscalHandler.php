@@ -2,8 +2,6 @@
 
 namespace App;
 
-use Transaction;
-
 class FiscalHandler extends AbstractHandler
 {
 
@@ -16,7 +14,7 @@ class FiscalHandler extends AbstractHandler
             echo 'Fiscal -- scipped!\n';
         }
          echo 'Fiscal -- processed!\n';
-        
+
         $this->next($transaction);
     }
 }
