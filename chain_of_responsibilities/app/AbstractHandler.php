@@ -25,7 +25,7 @@ abstract class AbstractHandler
 
     public function next(Transaction $transaction)
     {
-        if ($this->handler) {
+        if (isset($this->handler)) {
             $this->handler->process($transaction);
         }
     }
