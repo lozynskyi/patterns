@@ -7,7 +7,7 @@ abstract class AbstractHandler
     /**
      * @var AbstractHandler
      */
-    protected AbstractHandler $handler;
+    public AbstractHandler $handler;
 
     /**
      * @param Transaction $transaction
