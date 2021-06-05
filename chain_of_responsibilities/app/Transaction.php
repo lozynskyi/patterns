@@ -4,7 +4,7 @@ namespace App;
 
 class Transaction
 {
-  public $fiscal = true;
-  public $tax = false;
-  public $legal = true;
+  public bool $fiscal = true;
+  public bool $tax = false;
+  public bool $legal = true;
 }
