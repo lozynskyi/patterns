@@ -17,4 +17,4 @@ $fiscal->setHandler($legal);
 
 $tax->process($transaction);
 
-var_dump('Chain ended!');
+echo('Chain ended! \n');
