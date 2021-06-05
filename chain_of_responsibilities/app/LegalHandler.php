@@ -11,7 +11,7 @@ class LegalHandler extends AbstractHandler
     public function process(Transaction $transaction)
     {
         if (!$transaction->legal) {
-            echo 'Legal -- scipped!\n';
+            echo 'Legal -- skipped!\n';
         }
          echo 'Legal -- processed!\n';
 
