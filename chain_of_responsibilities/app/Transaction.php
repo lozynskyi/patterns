@@ -2,6 +2,7 @@
 
 namespace App;
 
+/*Transaction package */
 class Transaction
 {
   public bool $fiscal = true;
