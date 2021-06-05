@@ -4,7 +4,7 @@ use App\{FiscalHandler, LegalHandler, TaxHandler, Transaction};
 
 require 'vendor/autoload.php';
 
-var_dump('Init chain ...');
+echo('Init chain ... \n');
 
 $tax = new  TaxHandler();
 $fiscal = new FiscalHandler();
