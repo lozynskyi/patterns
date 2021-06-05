@@ -4,7 +4,7 @@ use App\{FiscalHandler, LegalHandler, TaxHandler, Transaction};
 
 require 'vendor/autoload.php';
 
-echo('Init chain ... \n');
+echo("Init chain ... \n");
 
 $tax = new  TaxHandler();
 $fiscal = new FiscalHandler();
@@ -17,4 +17,4 @@ $fiscal->setHandler($legal);
 
 $tax->process($transaction);
 
-echo('Chain ended! \n');
+echo("Chain ended! \n");
