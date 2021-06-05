@@ -14,7 +14,7 @@ design problem in your code.
 - [x] Singleton Pattern
 - [x] Factory Pattern
 - [ ] Event Dispatcher Pattern
-- [ ] Chain Of Responsibilities Pattern
+- [x] Chain Of Responsibilities Pattern
 
 
 
