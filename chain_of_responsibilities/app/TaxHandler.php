@@ -10,9 +10,9 @@ class TaxHandler extends AbstractHandler
     public function process(Transaction $transaction)
     {
         if (!$transaction->tax) {
-            echo 'Tax -- skipped!\n';
+            echo "Tax -- skipped!\n";
         }
-         echo 'Tax -- processed!\n';
+         echo "Tax -- processed!\n";
 
         $this->next($transaction);
     }
