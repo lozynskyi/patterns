@@ -10,7 +10,6 @@ $tax = new  TaxHandler();
 $fiscal = new FiscalHandler();
 $legal = new LegalHandler();
 
-// add transaction more functionality...
 $transaction = new Transaction();
 
 $tax->setHandler($fiscal);
