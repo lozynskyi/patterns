@@ -12,8 +12,9 @@ class FiscalHandler extends AbstractHandler
     {
         if (!$transaction->fiscal) {
             echo "Fiscal -- skipped!\n";
+        } else {
+            echo "Fiscal -- processed!\n";
         }
-         echo "Fiscal -- processed!\n";
 
         $this->next($transaction);
     }

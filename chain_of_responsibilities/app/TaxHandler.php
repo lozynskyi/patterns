@@ -11,8 +11,9 @@ class TaxHandler extends AbstractHandler
     {
         if (!$transaction->tax) {
             echo "Tax -- skipped!\n";
+        } else {
+            echo "Tax -- processed!\n";
         }
-         echo "Tax -- processed!\n";
 
         $this->next($transaction);
     }

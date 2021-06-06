@@ -12,8 +12,9 @@ class LegalHandler extends AbstractHandler
     {
         if (!$transaction->legal) {
             echo "Legal -- skipped!\n";
+        } else {
+            echo "Legal -- processed!\n";
         }
-         echo "Legal -- processed!\n";
 
         $this->next($transaction);
     }
