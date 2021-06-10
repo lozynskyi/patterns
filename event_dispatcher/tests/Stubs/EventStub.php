@@ -6,7 +6,7 @@ use App\Core\Events\Event;
 
 class EventSub extends Event
 {
-   public function getName()
+   public function getName(): string
    {
       return 'StubEvent';
    }
