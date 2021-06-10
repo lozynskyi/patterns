@@ -2,8 +2,7 @@
 
 namespace App\Core\Events;
 
-class Event
+abstract class Event
 {
-  public function emit()
-  {}
+  abstract public function getName();
 }
