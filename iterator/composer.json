@@ -1,6 +1,6 @@
 {
   "name": "lozynskyi/patterns",
-  "description": "iterator pattern",
+  "description": "Iterator Pattern",
   "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
