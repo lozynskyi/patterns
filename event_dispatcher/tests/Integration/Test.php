@@ -1,2 +1,0 @@
-<?
-echo('Test Integration start');
