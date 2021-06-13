@@ -8,6 +8,6 @@ class EventStub extends Event
 {
    public function getName(): string
    {
-      return 'EventStub';
+      return 'UserSignetUp';
    }
 }
