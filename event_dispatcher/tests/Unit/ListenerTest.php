@@ -20,6 +20,7 @@ class ListenerTest extends TestCase
       $listener->handle('not an event');
   }
 
+    /** @test */
   public function handle_method_accept_an_event()
   {
       $listener = new ListenerStub();
