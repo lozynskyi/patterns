@@ -14,7 +14,15 @@ class ListenerTest extends TestCase
   public function handle_method_throws_error_if_invalid_event_given()
   {
       $this->expectException(\TypeError::class);
+
+
       $listener = new ListenerStub();
       $listener->handle('not an event');
+  }
+
+  public function handle_method_accept_an_event()
+  {
+      $listener = new ListenerStub();
+      $listener->handle(new EventStub());
   }
 }
