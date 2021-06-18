@@ -2,7 +2,7 @@
 
 namespace App\Core\Events;
 
-class Listener
+abstract class Listener
 {
-
+    abstract public function handle(Event $event);
 }
