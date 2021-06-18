@@ -24,5 +24,7 @@ class ListenerTest extends TestCase
   {
       $listener = new ListenerStub();
       $listener->handle(new EventStub());
+
+      $this->addToAssertionCount(1);
   }
 }
