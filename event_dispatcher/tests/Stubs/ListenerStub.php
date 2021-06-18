@@ -8,7 +8,7 @@ use App\Core\Events\Listener;
 class ListenerStub extends Listener
 {
    //handle desc.
-   public function handle(Event $event): string
+   public function handle(Event $event)
    {
 
    }
