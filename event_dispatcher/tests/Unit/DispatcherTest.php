@@ -2,6 +2,7 @@
 
 namespace App\Tests\Unit;
 
+use App\Core\Events\Dispatcher;
 use App\Tests\Stubs\EventStub;
 use App\Tests\Stubs\EventStubNoName;
 use PHPUnit\Framework\TestCase;
@@ -14,14 +15,6 @@ class DispatcherTest extends TestCase
   {
       $dispatcher = new Dispatcher();
       $this->assertEmpty($dispatcher->getListeners());
-      $this->assertInternalType('array', $dispatcher->getListeners());
+      $this->assertIsArray($dispatcher->getListeners());
   }
-
-    /** @test */
-    public function it_can_add_listener()
-    {
-        $dispatcher = new Dispatcher();
-    }
-
-
 }

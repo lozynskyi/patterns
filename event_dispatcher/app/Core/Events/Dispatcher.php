@@ -2,10 +2,12 @@
 
 namespace App\Core\Events;
 
-abstract class Dispatcher
+class Dispatcher
 {
-    public function getListeners()
-    {
+    protected $listeners = [];
 
+    public function getListeners(): array
+    {
+        return $this->listeners;
     }
 }
