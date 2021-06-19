@@ -4,7 +4,7 @@ namespace App\Core\Events;
 
 class Dispatcher
 {
-    protected $listeners = [];
+    protected array $listeners = [];
 
     public function getListeners(): array
     {
