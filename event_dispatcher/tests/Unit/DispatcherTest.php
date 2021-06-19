@@ -10,16 +10,17 @@ class DispatcherTest extends TestCase
 {
 
   /** @test */
-  public function can_get_event_name()
+  public function it_holds_listeners_in_array()
   {
-      $event = new EventStub();
-      $this->assertEquals('UserSignetUp', $event->getName());
+      $dispatcher = new Dispatcher();
+      $this->assertEmpty($dispatcher->getListeners());
+      $this->assertInternalType('array', $dispatcher->getListeners());
   }
 
     /** @test */
     public function it_can_add_listener()
     {
-
+        $dispatcher = new Dispatcher();
     }
 
 
