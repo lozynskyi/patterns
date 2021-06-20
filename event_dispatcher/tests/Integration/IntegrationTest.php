@@ -11,7 +11,7 @@ class IntegrationTest extends TestCase
 {
 
     /** @test */
-    public function can_get_event_name()
+    public function can_dispatch_some_event()
     {
         $dispatcher = new Dispatcher();
 
