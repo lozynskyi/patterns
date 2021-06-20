@@ -10,6 +10,12 @@ class Dispatcher
     {
         return $this->listeners;
     }
+
+    public function getListenersByEvent($name)
+    {
+        return $this->listeners[$name];
+    }
+
     public function addListener($name, Listener $listener)
     {
         $this->listeners[$name][] = $listener;
