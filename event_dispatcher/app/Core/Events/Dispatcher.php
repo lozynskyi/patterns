@@ -13,7 +13,7 @@ class Dispatcher
 
     public function getListenersByEvent($name)
     {
-        return $this->listeners[$name];
+        return $this->listeners[$name] ?? [];
     }
 
     public function addListener($name, Listener $listener)

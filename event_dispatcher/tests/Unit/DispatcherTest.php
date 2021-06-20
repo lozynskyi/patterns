@@ -43,6 +43,6 @@ class DispatcherTest extends TestCase
     {
         $dispatcher = new Dispatcher();
 
-        $this->assertCount(1, $dispatcher->getListenersByEvent('UserSignUp'));
+        $this->assertCount(0, $dispatcher->getListenersByEvent('UserSignUp'));
     }
 }
