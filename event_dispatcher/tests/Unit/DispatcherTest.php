@@ -37,4 +37,12 @@ class DispatcherTest extends TestCase
 
         $this->assertCount(1, $dispatcher->getListenersByEvent('UserSignUp'));
     }
+
+    /** @test */
+    public function it_return_empty_array_if_event_not_set()
+    {
+        $dispatcher = new Dispatcher();
+
+        $this->assertCount(1, $dispatcher->getListenersByEvent('UserSignUp'));
+    }
 }
