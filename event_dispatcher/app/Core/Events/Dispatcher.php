@@ -20,4 +20,11 @@ class Dispatcher
     {
         $this->listeners[$name][] = $listener;
     }
+
+    public function dispatch(Event $event)
+    {
+        foreach ($this->getListenersByEvent($event->getName()) as $listener) {
+            $listener->handle($event);
+        }
+    }
 }
