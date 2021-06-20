@@ -17,6 +17,10 @@ class IntegrationTest extends TestCase
 
         $event = new EventStub();
         $mockerListener = $this->createMock(ListenerStub::class);
+        $mockerListener->expects($this->once())->method('handle')->with($event);
+
+        $dispatcher->addListener('EventStub', $mockerListener);
+        $dispatcher->dispatch($event);
     }
 
 }
