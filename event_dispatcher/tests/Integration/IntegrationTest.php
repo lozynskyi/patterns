@@ -23,4 +23,23 @@ class IntegrationTest extends TestCase
         $dispatcher->dispatch($event);
     }
 
+    /** @test */
+    public function can_dispatch_an_event_with_multiple_listeners()
+    {
+        $dispatcher = new Dispatcher();
+
+        $event = new EventStub();
+
+        $mockerListener = $this->createMock(ListenerStub::class);
+        $secondMockerListener = $this->createMock(ListenerStub::class);
+
+        $mockerListener->expects($this->once())->method('handle')->with($event);
+        $secondMockerListener->expects($this->once())->method('handle')->with($event);
+
+        $dispatcher->addListener('UserSignetUp', $mockerListener);
+        $dispatcher->addListener('UserSignetUp', $secondMockerListener);
+
+        $dispatcher->dispatch($event);
+    }
+
 }
