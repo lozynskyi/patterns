@@ -10,6 +10,6 @@ class SendSignInEmail extends Listener
 
     public function handle(Event $event)
     {
-        echo 'Handled by SendSignInEmail listener ' . $event->user->email;
+        echo 'Handled by SendSignInEmail listener with email ' . $event->user->email , PHP_EOL;
     }
 }

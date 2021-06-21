@@ -10,7 +10,7 @@ class UserSignedIn extends Event
     /**
      * @var User
      */
-    private User $user;
+    public User $user;
 
     public function __construct(User $user)
     {
