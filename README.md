@@ -13,10 +13,10 @@ design problem in your code.
 - [x] Adapter Pattern
 - [x] Singleton Pattern
 - [x] Factory Pattern
-- [ ] Event Dispatcher Pattern
+- [x] Event Dispatcher Pattern
 - [x] Chain Of Responsibilities Pattern
 - [ ] Template Method Pattern
-- [x] Iterator Pattern
+- [ ] Iterator Pattern
 
 
 
