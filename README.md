@@ -1,4 +1,4 @@
-# Design Patterns In Real World
+# Examples of Design Patterns In Real World
     Most Common Design Patterns in PHP Applications.
 
 **Design patterns** are typical solutions to common problems
