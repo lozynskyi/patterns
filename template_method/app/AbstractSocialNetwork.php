@@ -1,12 +1,12 @@
 <?php
 
-
+namespace App;
 
 abstract class AbstractSocialNetwork
 {
-    protected $username;
+    protected string $username;
 
-    protected $password;
+    protected string $password;
 
     public function __construct(string $username, string $password)
     {
