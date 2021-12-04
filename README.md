@@ -15,7 +15,7 @@ design problem in your code.
 - [x] Factory Pattern
 - [x] Event Dispatcher Pattern
 - [x] Chain Of Responsibilities Pattern
-- [x] Template Method Pattern
+- [ ] Template Method Pattern
 - [ ] Iterator Pattern
 - [ ] Saga Pattern
 
