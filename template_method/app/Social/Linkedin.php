@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Social;
+
 use App\AbstractSocialNetwork;
 
 class Linkedin extends AbstractSocialNetwork
