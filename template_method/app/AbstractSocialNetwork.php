@@ -27,7 +27,7 @@ abstract class AbstractSocialNetwork
         return false;
     }
     
-    abstract public function logIn(string $userName, string $password): bool;
+    abstract public function logIn(): bool;
 
     abstract public function sendData(string $message): bool;
 
