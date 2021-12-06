@@ -9,7 +9,11 @@ var_dump('Start template method pattern.');
 
 
 $linkedin = new Linkedin();
-$linkedin->logIn('username', 'password');
-
+if ($linkedin->logIn('username', 'password')) {
+  $linkedin->sendData('Message Post');
+  $linkedin->logOut();
+}
+  
 $instagram = new Instagram();
 $instagram->logIn('username', 'password');
+
