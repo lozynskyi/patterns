@@ -6,7 +6,7 @@ use App\AbstractSocialNetwork;
 
 class Linkedin extends AbstractSocialNetwork
 {
-    public function logIn(string $userName, string $password): bool
+    public function logIn(): bool
     {
         echo "\nChecking user's credentials...\n";
         echo "Name: " . $this->username . "\n";
