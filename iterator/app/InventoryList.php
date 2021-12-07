@@ -20,5 +20,33 @@ class InventoryList implements Countable, Iterator
         $this->inventory[] = $inventory;
     }
 
+    public function count(): int
+    {
+        return count($this->inventory);
+    }
 
+    public function current(): Inventory
+    {
+        return $this->inventory[$this->currentIndex];
+    }
+
+    public function key(): int
+    {
+        return $this->currentIndex;
+    }
+
+    public function next()
+    {
+        $this->currentIndex++;
+    }
+
+    public function rewind()
+    {
+        $this->currentIndex = 0;
+    }
+
+    public function valid(): bool
+    {
+        return isset($this->inventory[$this->currentIndex]);
+    }
 }
