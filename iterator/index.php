@@ -21,4 +21,5 @@ foreach ($inventoryList as $inventory) {
 
 print_r($inventorys);
 
-
+$inventoryList->removeInvontory(new Inventory('Document thre', 'Olvap Iyksnyzol'));
+print_r($inventorys);
