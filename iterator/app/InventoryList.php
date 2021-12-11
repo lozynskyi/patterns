@@ -19,6 +19,17 @@ class InventoryList implements Countable, Iterator
     {
         $this->inventory[] = $inventory;
     }
+    
+    public function removeInventory(Inventory $toRemove)
+    {
+        foreach ($this->inventory as $key => $inventory) {
+            if ($inventory->getAuthorAndTitle() === $toRemove->getAuthorAndTitle()) {
+                unset($this->inventory[$key]);
+            }
+        }
+
+        $this->inventory = array_values($this->inventory);
+    }
 
     public function count(): int
     {
