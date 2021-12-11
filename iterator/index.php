@@ -18,3 +18,7 @@ $inventorys = [];
 foreach ($inventoryList as $inventory) {
     $inventorys[] = $book->getAuthorAndTitle();
 }
+
+print_r($inventorys);
+
+
