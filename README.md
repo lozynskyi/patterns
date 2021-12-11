@@ -16,7 +16,7 @@ design problem in your code.
 - [x] Event Dispatcher Pattern
 - [x] Chain Of Responsibilities Pattern
 - [x] Template Method Pattern
-- [ ] Iterator Pattern
+- [x] Iterator Pattern
 - [ ] Saga Pattern
 
 
