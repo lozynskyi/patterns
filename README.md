@@ -17,6 +17,7 @@ design problem in your code.
 - [x] Chain Of Responsibilities Pattern
 - [x] Template Method Pattern
 - [x] Iterator Pattern
+- [ ] Null Object
 - [ ] Saga Pattern
 
 
