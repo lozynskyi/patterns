@@ -8,3 +8,4 @@ $worker2 = $pool->get();
 
 var_dump('Workers pool contain: ' . count($pool));
 
+$pool->dispose($worker1);
