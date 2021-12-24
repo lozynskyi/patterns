@@ -19,9 +19,7 @@ design problem in your code.
 - [x] Iterator Pattern
 - [x] Pool Pattern
 - [ ] Prototype Pattern
-
 - [x] Null Object
-- [ ]
 
 
 
