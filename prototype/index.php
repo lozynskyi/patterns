@@ -1,7 +1,7 @@
 <?php
 
-use App\Inventory;
-use App\InventoryList;
+use App\PspTransaction;
+use App\BankTransaction;
 
 require 'vendor/autoload.php';
 
