@@ -30,4 +30,9 @@ abstract class TransactionPrototype
     {
         return $this->amount;
     }
+      
+    public function setAmount(float $amount)
+    {
+        $this->amount = $amount;
+    }
 }
