@@ -4,10 +4,8 @@ namespace App;
 
 class PspTransaction extends TransactionPrototype
 {
-    public function __construct($amount, $description) {
+    public function __construct() {
         $this->topic = 'PSP';
-        $this->amount = $amount;
-        $this->description = $description;
     }
     
     public function __clone()
