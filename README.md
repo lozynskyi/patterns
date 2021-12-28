@@ -18,7 +18,7 @@ design problem in your code.
 - [x] Template Method Pattern
 - [x] Iterator Pattern
 - [x] Pool Pattern
-- [ ] Prototype Pattern
+- [x] Prototype Pattern
 - [x] Null Object
 
 
