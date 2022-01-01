@@ -20,7 +20,8 @@ design problem in your code.
 - [x] Pool Pattern
 - [x] Prototype Pattern
 - [x] Null Object
-- [] 
+- [ ] Dependencies Injection 
+
 
 
 
